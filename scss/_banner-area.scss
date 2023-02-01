@@ -1,0 +1,63 @@
+
+
+#banner-area{
+   position: relative;
+   justify-content: center;
+   min-height: 100vh;
+   color: #fff;
+   text-align: center;
+}
+
+.banner-area .banner-img{
+   background-image: url(/img/house.jpg);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   -webkit-background-size:cover;
+   background-size: cover;
+   z-index: -1;
+   @include boxShadow;
+}
+
+.banner-area .banner-img:after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   opacity: .6;
+}
+
+.banner-area h1 {
+   margin-bottom: 15px;
+   font-size: 65px;
+   font-family: $font-family;
+}
+
+.banner-area h3{
+   margin-bottom: 40px;
+   font-size: 25px;
+}
+
+.banner-area a.banner-btn{
+   font-size: 120%;
+   font-weight: 700;
+   padding: 15px 35px;
+   background: $color-violet;
+   border-radius: 50px;
+}
+
+
+
+.banner-area{
+   @include flex;
+   
+  flex-direction: column;
+  align-items: center;
+ padding: 110px 100px;
+}
+

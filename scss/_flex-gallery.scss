@@ -1,0 +1,36 @@
+.gallery-flex-1{
+    @include flex;
+  
+    flex-wrap: wrap;
+	justify-content: space-between;
+
+    &__item{
+        margin: 1rem;
+    
+        flex: 1 0 20%;
+        
+    
+        margin: 1rem;
+        @include boxShadow;
+       // box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+
+        &__img{
+            display: block;
+            width:  101%;
+            height: 101%;
+            object-fit: cover;
+           
+            transition: transform 400ms ease-out;
+        }
+
+        &__img:hover{
+            transform: scale(1.15);
+        }
+    }
+}
+
+
+
+
+

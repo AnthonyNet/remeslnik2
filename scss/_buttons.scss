@@ -1,0 +1,76 @@
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: all .2s;
+	position: relative;
+	
+	
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: $color-violet;
+  border: 1px solid $color-violet;
+  margin-right: 15px;
+}
+
+
+
+.btn:hover,
+.btn:active
+{
+transform: translateY(-3px);
+	background-color: $color-violet;
+	color: rgb(255, 255, 255);
+	
+}
+
+
+.btn::after {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius:  100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:  -1;
+	transition:  all .6s;
+outline: 0;
+}
+
+.btn::after{
+	background-color: $color-violet;
+	@include colorGradient;
+}
+
+.btn:hover::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+	
+}
+
+.flex-btn,
+.flex-btnClose{
+	@include flex;
+  
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 5vh;
+  
+	  color: #fff;
+	  font-weight: 700;
+	  width: 20vw;
+	  padding: 15px 35px;
+	  background: $color-violet;
+	  border-radius: 50px;
+	  @include colorGradient;
+  }
+ 

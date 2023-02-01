@@ -1,0 +1,32 @@
+footer nav{
+    @include colorGradient;
+    width: 100%
+}
+
+footer nav ul{
+    
+     @include flex;
+ 
+   
+     width: 60%;
+     margin: 0 auto;
+     height: 100px;
+    
+     justify-content: space-between;
+    
+     text-align: center;
+     align-items: center;
+     
+     color: #fff;
+     
+ }
+
+ footer nav ul li{
+    align-content: center;
+    padding: 1rem;
+    transition: .6s ease;
+     &:hover{
+    @include boxShadow;
+   
+   }
+ }

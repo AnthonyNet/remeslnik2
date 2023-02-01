@@ -1,0 +1,44 @@
+#contact {
+    background: #fff;
+   margin-bottom: 5vh;
+}
+
+
+
+.contact-content{
+    width: 100%;
+    @include flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.contact-content li{
+padding: 0 30px;
+flex-basis: center;
+text-align: center;
+transition: .6s ease;
+&:hover{
+    @include iconShadow;
+    
+}
+}
+
+.contact-content li i{
+    font-size: 50px;
+    
+    color: $color-violet;
+    margin-bottom: 25px;
+
+}
+
+.contact-content li p{
+    padding: 0;
+    font-size: 110%;
+   font-weight: 700;
+}
+
+
+
+

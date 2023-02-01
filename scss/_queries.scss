@@ -1,0 +1,168 @@
+@media (max-width: 1150px){
+
+  
+    .header h2{
+        
+        font-size: 90%;
+        margin-left: -7vw;
+        
+    }
+    .header nav ul li{
+        font-size:80%;
+    }
+    .gallery-main{
+        width: 80vw;
+    }
+}
+
+@media( max-width: 1000px){
+    .banner-area{
+        padding: 100px 50px;
+    }
+
+    .gallery-flex-1__item{
+        flex: 1 0 44%;
+    }
+
+    .gallery-p img{
+        width: 8vw;
+        height: 8vw;
+        margin: 0.5vw;
+    }
+
+   .tab{font-size: 3.3vw}
+   .tab-content div h3{
+    font-size: 3vw;
+   }
+}
+
+@media (max-width: 813px){
+    
+  
+    .header h2{
+        
+        display: none;
+        
+    }
+    .header nav{
+        
+        margin: 0 auto;
+    }
+    .header nav li{
+        
+        margin: 0 7px;
+    }
+
+   
+
+   
+
+    .contact-content li{
+        flex: 1 0 100%;
+        margin-bottom: 3vh;
+        }
+        .contact-content li:last-child{
+            margin-bottom: 0;
+        }
+    .about-area .flex-btn{
+      width: 50vw;
+     } 
+     
+     
+     .gallery-main{
+        width: 60vw;
+        height: 60vh;
+    }
+    
+
+     .gallery-main img:hover{
+        transform: scale(1);
+    }
+
+  footer nav ul{
+     width: 90%;
+  }
+}
+
+@media (max-width: 700px){
+  .header {
+    padding: 30px 1px 0;
+  }
+ 
+}
+
+@media (max-width: 600px) {
+    .banner-area{
+        min-height: 600px;
+        padding: 125px 30px;
+    }
+    
+   
+    .banner-area h1 {
+        font-size: 32px;
+    }
+    .banner-area h3 {
+        font-size: 20px;
+    }
+ 
+    .banner-area a.banner-btn {
+        padding: 15px 40px;
+    }
+ }
+
+@media (max-width: 520px){
+    .header {
+        height: auto;
+        
+    }
+   .header nav{
+       width: 90%;
+       justify-content: left;
+       text-align: center;
+     
+   }
+    .header nav ul{
+        margin-top: 3vh;
+        flex-direction: column;
+    }
+    .header nav ul li{
+        
+        margin-bottom: 3vh;
+       display: none;
+       border-bottom: 2px solid white;
+       border-radius: 10%;
+    }
+    .header nav ul li:nth-child(1),
+    .header nav ul li:nth-child(5){
+        border-bottom: none;
+    }
+
+  
+   
+  #hamburgerMenu{
+        display: block;
+        text-align: right;
+        margin-top: .7vh;
+    }
+
+  
+    
+     footer nav ul li:first-child{
+        display: none;
+    }
+}
+
+@media (max-width: 520px){
+    footer nav ul{
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer nav ul li{
+        padding: 2%;
+    }
+
+    
+}
+
+

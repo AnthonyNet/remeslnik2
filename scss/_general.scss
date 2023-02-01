@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            
+}
+
+html{
+    
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden; // hide vertical
+
+}
+
+
+body{
+    font-family: poppins;
+     overflow-x: hidden; // hide vertical
+     outline:none; 
+}
+
+
+
+section h3{
+    font-size: 190%;
+    text-align: center;
+    font-family: $font-family;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+section ul li i {
+    font-size: 100px;
+    color: red;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+
+
+

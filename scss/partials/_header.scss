@@ -1,0 +1,89 @@
+nav ul li a{
+    font-size: 150%;
+    font-weight: 900;
+}
+
+ul,nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.header{
+   background-color: rgba($color-violet, $alpha: 0.8);
+    @include flex;
+
+    position: fixed;
+    top: -30px;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100px;
+   
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(250, 248, 219);
+    padding: 35px 100px 0;
+    @include colorGradient;
+    @include boxShadow;
+    
+}
+
+.header h2 {
+   // text-transform: uppercase;
+    font-family: $font-family;
+    
+}
+
+
+
+.header nav ul {
+    @include flex;
+   
+    z-index: 1;
+    
+}
+
+.header nav ul li {
+    margin: 0 15px;
+    transition: 0.4s ease;
+   
+}
+
+.header .navHover{
+    transition: 0.4s ease;
+    &:hover{
+
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    
+    }
+}
+
+.header nav ul li:first-child {
+    margin-left: 0;
+}
+
+.header nav ul li:last-child {
+    margin-right: 0;
+}
+
+#hamburgerMenu{
+    display: none;
+    
+}
+
+#closeMenu{
+    display: none;
+    text-align: right;
+}
+
+
+
+
+

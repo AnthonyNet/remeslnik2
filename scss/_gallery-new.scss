@@ -1,0 +1,115 @@
+.gallery2{
+   // display: none;
+}
+
+.gallery2{
+  
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10vh;
+   
+}
+
+// Menu
+[data-tab-content] {
+   display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+
+  .gallery2 .tabs {
+      @include flex;
+    justify-content: space-between;
+    font-family: $font-family;
+    font-size: 3vw;
+    font-weight: 700;
+    margin-bottom: 5vh;
+    border-bottom: 4px solid rgb(78, 68, 68);
+    border-radius: 10%;
+  }
+
+  .gallery2 .tabs li {
+   cursor: pointer;
+}
+
+.gallery2 .tabs li:hover {
+    
+    animation: bounce 1s;
+    color: $color-violet;
+ }
+
+
+
+ @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+      color: $color-violet;
+      
+    }
+   
+  }
+
+  .gallery2 .tabs li:active{
+    color: blue;
+}
+ 
+
+.gallery-main{
+    display: flex;
+    justify-content: center;
+    
+    width: 60vw;
+    height: 50vh;
+    margin: 0 auto;
+    
+}
+
+.gallery-main img{
+   
+    max-width: 100%;
+    max-height: 100%;
+  
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-main img:hover{
+    transform: scale(1.05);
+}
+
+.gallery-p{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+}
+
+.gallery-p img{
+    
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    background-repeat: 4px;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-p img:hover{
+    transform: scale(1.1);
+}
+
